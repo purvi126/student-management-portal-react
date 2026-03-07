@@ -1,0 +1,180 @@
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f6fb;
+  color: #222;
+}
+
+/* App shell */
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  background-color: #1a1a2e;
+  color: white;
+  padding: 20px 28px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.45rem;
+  font-weight: 700;
+}
+
+/* Top nav: supports both navbar and top-nav */
+.navbar,
+.top-nav {
+  background-color: #2f3b52;
+  padding: 12px 28px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.navbar a,
+.top-nav a,
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.navbar a:hover,
+.top-nav a:hover,
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Main layout: supports both layout and app-body */
+.layout,
+.app-body {
+  display: flex;
+  flex: 1;
+  min-height: calc(100vh - 140px);
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: #ffffff;
+  border-right: 1px solid #d9e2ef;
+  padding: 24px 20px;
+}
+
+.sidebar h3,
+.sidebar-title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+  color: #1a1a2e;
+}
+
+.sidebar ul,
+.sidebar-menu {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.sidebar li,
+.sidebar-menu li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.sidebar a,
+.sidebar-link {
+  color: #222;
+  text-decoration: none;
+}
+
+.sidebar a:hover,
+.sidebar-link:hover {
+  color: #1a73e8;
+  text-decoration: underline;
+}
+
+/* Main content: supports both content and main-content */
+.content,
+.main-content {
+  flex: 1;
+  padding: 32px 40px;
+}
+
+/* Generic page styles */
+.page h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 2rem;
+  color: #1a1a2e;
+}
+
+.page p {
+  font-size: 1.02rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 900px;
+  margin-top: 16px;
+  background: white;
+}
+
+th,
+td {
+  border: 1px solid #d7deea;
+  padding: 10px 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #1a73e8;
+  color: white;
+}
+
+/* Buttons */
+button {
+  margin-right: 8px;
+  margin-top: 8px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Inputs and selects */
+input,
+select {
+  padding: 10px 12px;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  width: 100%;
+  max-width: 360px;
+  border: 1px solid #c8d2e1;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #dcdcdc;
+  text-align: center;
+  padding: 14px;
+  font-size: 0.95rem;
+  color: #222;
+}

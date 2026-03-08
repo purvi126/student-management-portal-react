@@ -7,33 +7,58 @@ export default function Dashboard() {
   return (
     <div className="page">
 
-      <h2>Dashboard</h2>
-      <p>
-        This dashboard demonstrates <strong>useState</strong> and{" "}
-        <strong>useEffect</strong> in action through an interactive counter,
-        a live timer, a live API fetch using <strong>axios</strong>, and a
-        full <strong>CRUD</strong> student manager powered by json-server.
-      </p>
+      <div className="page-header">
+        <h2>Dashboard</h2>
+        <p>
+          This dashboard brings together interactive tools, live API data, and
+          student record management in one place.
+        </p>
+      </div>
 
-      {/* Counter & Timer */}
+      {/* ── Interactive Tools ── */}
       <div className="section-card">
-        <p className="section-card-title">Interactive Components</p>
-        <div style={{ display: "flex", gap: "24px", flexWrap: "wrap" }}>
-          <Counter />
-          <Timer />
+        <div className="section-card-header">
+          <span className="section-card-icon">⚙️</span>
+          <span className="section-card-title">Interactive Tools</span>
+        </div>
+        <div className="section-card-body">
+          <p className="section-desc">
+            Use these components to test state updates and timed actions.
+          </p>
+          <div className="widget-row">
+            <Counter />
+            <Timer />
+          </div>
         </div>
       </div>
 
-      {/* User List */}
+      {/* ── Live API Data ── */}
       <div className="section-card">
-        <p className="section-card-title">API Users</p>
-        <UserList />
+        <div className="section-card-header">
+          <span className="section-card-icon">🌐</span>
+          <span className="section-card-title">Live API Data</span>
+        </div>
+        <div className="section-card-body">
+          <p className="section-desc">
+            This section displays user data fetched from a public API.
+          </p>
+          <UserList />
+        </div>
       </div>
 
-      {/* Student CRUD */}
+      {/* ── Student Records Manager ── */}
       <div className="section-card">
-        <p className="section-card-title">Student Manager</p>
-        <StudentCRUD />
+        <div className="section-card-header">
+          <span className="section-card-icon">🎓</span>
+          <span className="section-card-title">Student Records Manager</span>
+        </div>
+        <div className="section-card-body">
+          <p className="section-desc">
+            Add, edit, view, and delete student records using JSON Server as a
+            local backend.
+          </p>
+          <StudentCRUD />
+        </div>
       </div>
 
     </div>

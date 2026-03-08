@@ -1,22 +1,29 @@
 {
-    "students": [
-        {
-            "id": 1,
-            "name": "Alice Johnson",
-            "email": "alice@example.com",
-            "course": "Computer Science"
-        },
-        {
-            "id": 2,
-            "name": "Bob Smith",
-            "email": "bob@example.com",
-            "course": "Mathematics"
-        },
-        {
-            "id": 3,
-            "name": "Carol White",
-            "email": "carol@example.com",
-            "course": "Physics"
-        }
-    ]
+  "students": [
+    {
+      "id": "1",
+      "name": "Alice Johnson",
+      "email": "alice@example.com",
+      "course": "Computer Science"
+    },
+    {
+      "id": "2",
+      "name": "Bob Smith",
+      "email": "bob@example.com",
+      "course": "Mathematics"
+    },
+    {
+      "id": "3",
+      "name": "Carol White",
+      "email": "carol@example.com",
+      "course": "Physics"
+    },
+    {
+      "id": "cd81",
+      "name": "Mahi Gupta",
+      "email": "shauryya.applications@gmail.com",
+      "course": "Computer Science"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
